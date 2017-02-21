@@ -1,9 +1,9 @@
-<div class="container-fluid d-flex flex-column">
+<div class="home-container">
   <% @filmthemes.each_with_index do |filmtheme, index| %>
     <% if index % 3 == 0 %>
       <div class='row'>
     <% end %>
-        <div class="col-md-4 filmtheme">
+        <div class="filmtheme">
           <div class="front">
             <h2>On <%= filmtheme.name %></h2>
           </div>

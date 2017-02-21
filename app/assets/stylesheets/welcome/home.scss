@@ -1,0 +1,39 @@
+html { height: 100%; }
+
+body {
+  height: 100%;
+  background: url("http://www.mrvinyl.co.za/wp-content/uploads/2014/01/jack-johnson-on-and-on.jpg") no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  color: white;
+}
+.container-fluid { 
+  height: 100%;
+}
+.row {
+  flex: 1 0 auto;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 5px 5px 2px 5px;
+  border-radius: 10%;
+}
+.filmtheme {
+  text-align: center;
+}
+.filmtheme .back {
+  background-color: white;
+  color: black;
+  display: none;
+}
+.col-md-6 {
+  background-color: inherit;
+}
+.col-md-6 h2 {
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-top: 0;
+}

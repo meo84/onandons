@@ -1,0 +1,8 @@
+<% filmtheme.films.each do |film| %>
+  <div class='col-md-6'>
+    <%= image_tag(film.photo_url, alt: '#{film.title} film photo') %>
+    <h2><%= film.title %></h2>
+    <p><%= film.director.first_name + ' ' + film.director.last_name %></p>
+    <p><%= film.comment %></p>
+  </div>
+<% end %>

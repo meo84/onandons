@@ -1,0 +1,14 @@
+<div class="container-fluid d-flex flex-column">
+  <div class="row">
+    <% @filmthemes.each do |filmtheme| %>
+    <div class="col-md-4 filmtheme">
+      <div class="front">
+        <h2>On <%= filmtheme.name %></h2>
+      </div>
+      <div class="back">
+        <%= render partial: 'partying', :locals => {:filmtheme => filmtheme} %>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>

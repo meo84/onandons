@@ -36,7 +36,6 @@ img {
   color: black;
   display: flex;
   flex-direction: row;
-  display: none;
 }
 .filmtheme .back .film {
   flex: 1 0 auto;
@@ -44,4 +43,9 @@ img {
 .filmtheme .film h2 {
   font-family: 'Gloria Hallelujah', cursive;
   margin-top: 0;
+  margin-bottom: 0;
 }
+.filmtheme .film p {
+  margin-top: 0;
+}
+

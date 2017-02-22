@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  warning: MyString
+  music_title: MyString
+  music_url: MyString
+  video_url: MyString
+  description: MyString
+
+two:
+  warning: MyString
+  music_title: MyString
+  music_url: MyString
+  video_url: MyString
+  description: MyString

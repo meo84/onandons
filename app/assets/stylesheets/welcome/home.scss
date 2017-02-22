@@ -48,4 +48,10 @@ img {
 .filmtheme .film p {
   margin-top: 0;
 }
+.filmtheme .film a:link, a:visited {
+  color: grey;
+}
+.filmtheme .film a:hover {
+  color: cyan;
+}
 

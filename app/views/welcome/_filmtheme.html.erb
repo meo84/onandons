@@ -1,0 +1,21 @@
+<% filmtheme.films.each do |film| %>
+  <div class='film'>
+    <%= image_tag(film.photo_url, alt: '#{film.title} film photo') %>
+    <h2><%= film.title %></h2>
+    <p><%= film.director.first_name + ' ' + film.director.try(:last_name).to_s %></p>
+    <p>
+      <% if film.comment.try(:description) %>
+        <%= film.comment.description %><br>
+      <% end %>
+      <% if film.comment.try(:warning) %>
+        <i class='fa fa-exclamation-circle' aria-hiden='true'></i><%= film.comment.warning %><br>
+      <% end %>
+      <% if film.comment.try(:music_title) && film.comment.try(:music_url) %>
+        <a href='<%= film.comment.music_url %>' title='<%= film.comment.music_title %>' target='_blank'><i class='fa fa-music' aria-hiden='true'></i></a><br>
+      <% end %>
+      <% if film.comment.try(:video_url) %>
+        <a href='<%= film.comment.video_url %>' target='_blank'><i class='fa fa-video-camera' aria-hiden='true'></i></a><br>
+      <% end %>
+    </p>
+  </div>
+<% end %>

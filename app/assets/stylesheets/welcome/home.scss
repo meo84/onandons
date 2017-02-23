@@ -1,6 +1,6 @@
-html { height: 100%; }
+html, body { height: 100%; }
 
-body {
+body section {
   height: 100%;
   margin: 0;
   background: url("http://www.mrvinyl.co.za/wp-content/uploads/2014/01/jack-johnson-on-and-on.jpg") no-repeat fixed; 
@@ -11,6 +11,14 @@ body {
 
   color: white;
   font-family: 'Helvetica', sans-serif;
+}
+body header {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: white;
+  color: black;
+}
+body header h1 {
+  margin-left: 20px;
 }
 .home-container { 
   height: 100%;

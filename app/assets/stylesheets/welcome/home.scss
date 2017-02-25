@@ -29,6 +29,7 @@ body header h1 {
   flex: 1 0 auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 img {
   max-height: 90%;

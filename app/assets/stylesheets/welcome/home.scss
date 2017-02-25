@@ -49,9 +49,15 @@ img {
   color: black;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 .filmtheme .back .film {
-  flex: 1 1 auto;
+  flex: 1 1 50%;
+}
+@media all and (max-width: 768px) {
+  .filmtheme .back .film {
+    flex-basis: auto;
+  }
 }
 .filmtheme .back .film h2 {
   font-family: 'Gloria Hallelujah', cursive;

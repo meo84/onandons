@@ -5,16 +5,16 @@
     <p><%= film.director.first_name + ' ' + film.director.try(:last_name).to_s %></p>
     <p>
       <% if film.comment.try(:description) %>
-        <%= film.comment.description %><br>
+        <%= film.comment.description %>
       <% end %>
       <% if film.comment.try(:warning) %>
-        <i class='fa fa-exclamation-circle' aria-hiden='true'></i><%= film.comment.warning %><br>
+        <span><i class='fa fa-exclamation-circle' aria-hiden='true'></i> <%= film.comment.warning %></span>
       <% end %>
       <% if film.comment.try(:music_title) && film.comment.try(:music_url) %>
-        <a href='<%= film.comment.music_url %>' title='<%= film.comment.music_title %>' target='_blank'><i class='fa fa-music' aria-hiden='true'></i></a><br>
+        <span> <a href='<%= film.comment.music_url %>' title='<%= film.comment.music_title %>' target='_blank'><i class='fa fa-music fa-big' aria-hiden='true'></i></a></span>
       <% end %>
       <% if film.comment.try(:video_url) %>
-        <a href='<%= film.comment.video_url %>' target='_blank'><i class='fa fa-video-camera' aria-hiden='true'></i></a><br>
+        <span> <a href='<%= film.comment.video_url %>' target='_blank'><i class='fa fa-video-camera fa-big' aria-hiden='true'></i></a></span>
       <% end %>
     </p>
   </div>

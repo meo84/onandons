@@ -37,6 +37,11 @@ img {
   padding: 5px 5px 2px 5px;
   border-radius: 3%;
 }
+.filmtheme-centercontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .row .filmtheme {
   text-align: center;
   flex: 1 0 auto;
@@ -44,6 +49,10 @@ img {
 }
 .filmtheme-zoom {
   flex-basis: 100% !important;
+}
+.filmtheme .front {
+  display: flex;
+  align-items: center;
 }
 .filmtheme .back {
   background-color: white;

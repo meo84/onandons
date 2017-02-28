@@ -26,10 +26,12 @@ body header h1 {
   flex-direction: column;
 }
 .row {
-  flex: 1 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.row-stretch {
+  flex-grow: 1;
 }
 img {
   max-height: 90%;

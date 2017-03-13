@@ -6,6 +6,6 @@ $(function() {
     $(this).siblings().toggle();
     $(this).parent().siblings().toggle();
     $(this).children('.front').toggle();
-    $(this).children('.back').slideToggle();
+    $(this).children('.back').toggle();
   });
 });

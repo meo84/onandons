@@ -55,10 +55,12 @@ img {
 .filmtheme-zoom {
   flex-basis: 100% !important;
 }
+.filmtheme:hover {
+  cursor: pointer;
+}
 .filmtheme .front {
   display: flex;
   align-items: center;
-  cursor: pointer;
 }
 .filmtheme .back {
   background-color: white;

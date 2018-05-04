@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   root 'welcome#home'
+
+  get '/2016' => 'welcome#home'
+  get '/2017' => 'welcome#home_again'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
